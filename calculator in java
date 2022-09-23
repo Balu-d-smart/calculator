@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.io.*;
+class Main {
+    void mean(int m,int n ,int i)
+    {int result=0;
+        switch(i)
+     {
+    case 1:
+        result=m+n;
+    System.out.println(" adding m and n: " +  result);
+    break;
+    case 2:
+        result=m*n;
+    System.out.println(" multipation m and n: "+  result );
+    break;
+    case 3:
+    if(n==0)
+    {
+        System.out.println("can't divisor "+  result);
+    }
+    else
+    result=m/n;
+    System.out.println(" division m and n: " +  result );
+    break;
+    case 4:
+        result=m-n;
+    System.out.println(" subtrication m and n: "+  result );
+    break;
+    default :
+    System.out.println(" opps " );
+}
+    }
+    public static void main(String[] args) 
+    {
+        Main obj= new Main();
+    System.out.println(" enter the first number  : ");
+        Scanner sc = new Scanner(System.in);
+     int n=sc.nextInt();
+      System.out.println(" enter the second number  : ");
+     int m=sc.nextInt();
+      System.out.println(" enter the i number  : ");
+      int i=sc.nextInt(); 
+      obj.mean(m,n,i);       
+      }
+}
